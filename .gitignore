@@ -1,0 +1,24 @@
+# build artifacts (og-картинка собирается локально, артефакты не хранятся)
+node_modules/
+_*.ttf
+_make_og.js
+package.json
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# неиспользуемые исходники фото (сайт использует только .webp); og.jpg — оставляем
+pictures/*.jpg
+!pictures/og.jpg
+
+# внутренние рабочие документы — не публикуются в портфолио-репозитории
+CLAUDE.md
+BRIEF-fullhouse.md
+main goal.md
+reviews.md
+services.md
+skills-lock.json
+.claude/
+.agents/

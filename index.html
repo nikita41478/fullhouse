@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Full House — барбершоп на Горской · Новосибирск</title>
+<meta name="description" content="Full House — настоящий барбершоп на Горской, Новосибирск. Стрижки, борода, камуфляж, детская стрижка. Честные цены, запись по телефону +7 952 932-30-00.">
+<meta property="og:title" content="Full House · барбершоп на Горской">
+<meta property="og:description" content="Единственный настоящий барбершоп в микрорайоне — и определённо лучший. Запись: +7 952 932-30-00.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Full House">
+<meta property="og:url" content="https://nikita41478.github.io/fullhouse/">
+<meta property="og:image" content="https://nikita41478.github.io/fullhouse/pictures/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Full House — барбершоп на Горской, Новосибирск">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Full House · барбершоп на Горской">
+<meta name="twitter:description" content="Настоящий барбершоп на Горской, Новосибирск. Стрижки, борода, камуфляж. Запись: +7 952 932-30-00.">
+<meta name="twitter:image" content="https://nikita41478.github.io/fullhouse/pictures/og.jpg">
+<meta name="theme-color" content="#16130F">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Commissioner:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#16130F; --bg-2:#211C16; --ink:#F0E9DD; --ink-soft:#B6AC9B;
+  --accent:#C9A86A; --accent-deep:#A8884B; --accent-soft:rgba(201,168,106,.14);
+  --line:rgba(201,168,106,.22);
+  --r-sm:4px; --r-md:8px; --r-lg:12px; --r-btn:6px;
+  --shadow:0 18px 50px -20px rgba(0,0,0,.85);
+  --shadow-soft:0 10px 30px -16px rgba(0,0,0,.7);
+  --maxw:1140px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:74px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Commissioner","Segoe UI",system-ui,Arial,sans-serif;
+  font-weight:400; line-height:1.6; letter-spacing:.1px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+/* film grain */
+body::after{
+  content:""; position:fixed; inset:0; z-index:9; pointer-events:none; opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+h1,h2,h3,.serif{font-family:"Forum","Times New Roman",Georgia,serif; font-weight:400; letter-spacing:.4px}
+img{display:block; max-width:100%}
+a{color:inherit; text-decoration:none}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+section{padding:76px 0; position:relative}
+@media (max-width:640px){section{padding:54px 0}}
+
+/* labels / headings */
+.eyebrow{
+  font-size:12px; letter-spacing:.32em; text-transform:uppercase;
+  color:var(--accent); font-weight:500; display:flex; align-items:center; gap:12px; margin:0 0 14px;
+}
+.eyebrow::before{content:""; width:30px; height:1px; background:linear-gradient(90deg,transparent,var(--accent))}
+h2.title{font-size:clamp(28px,5.4vw,46px); line-height:1.08; margin:0 0 16px}
+.lead{color:var(--ink-soft); max-width:60ch; font-size:16.5px}
+
+/* divider with blade icon */
+.divider{display:flex; align-items:center; gap:16px; color:var(--line); max-width:var(--maxw); margin:0 auto; padding:0 20px}
+.divider::before,.divider::after{content:""; height:1px; flex:1; background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.divider svg{width:26px; height:26px; stroke:var(--accent); opacity:.8}
+
+/* buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  font-family:inherit; font-size:15px; font-weight:500; letter-spacing:.03em;
+  padding:14px 26px; border-radius:var(--r-btn); cursor:pointer; border:1px solid transparent;
+  transition:transform .12s var(--ease), background .25s var(--ease), box-shadow .25s var(--ease), border-color .25s;
+  text-align:center;
+}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:linear-gradient(180deg,var(--accent),var(--accent-deep)); color:#1a1509; font-weight:600; box-shadow:0 10px 26px -12px rgba(201,168,106,.6)}
+.btn-primary:hover{box-shadow:0 14px 32px -10px rgba(201,168,106,.75)}
+.btn-ghost{background:transparent; border-color:var(--line); color:var(--ink)}
+.btn-ghost:hover{border-color:var(--accent); background:var(--accent-soft)}
+.btn-block{width:100%}
+.btn-sm{padding:11px 18px; font-size:14px}
+
+/* ============ HEADER ============ */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding:12px 0; transition:background .3s var(--ease), padding .3s var(--ease);
+}
+/* NB: deliberately NO backdrop-filter on the header. A filtered ancestor becomes the
+   containing block for the fixed mobile-nav overlay, which breaks its full-screen open
+   (overlay collapses to the header box). Use a near-solid background instead. */
+.topbar.scrolled{background:rgba(22,19,15,.95); border-bottom:1px solid var(--line); padding:8px 0}
+.topbar-inner{
+  max-width:var(--maxw); margin:0 auto; padding:0 20px; width:100%;
+  display:flex; align-items:center; justify-content:space-between; gap:18px;
+}
+.brand{font-family:"Forum",serif; font-size:22px; letter-spacing:1px; display:flex; align-items:center; gap:15px; flex:none; z-index:60}
+.brand b{color:inherit; font-weight:400}
+.brand .mk{width:8px; height:8px; border:1px solid var(--accent); transform:rotate(45deg); display:inline-block}
+.foot-logo{height:34px; width:34px; flex:none; border-radius:50%; object-fit:cover; box-shadow:0 0 0 1px var(--line), var(--shadow-soft)}
+.brand-logo{height:44px; width:44px; flex:none; border-radius:50%; object-fit:cover;
+  box-shadow:0 0 0 1px var(--line), var(--shadow-soft); transition:height .3s var(--ease), width .3s var(--ease)}
+.topbar.scrolled .brand-logo{height:38px; width:38px}
+
+/* nav */
+.nav{display:flex; align-items:center; gap:26px}
+.nav-link{font-size:14.5px; color:var(--ink); letter-spacing:.01em; position:relative; transition:color .2s var(--ease)}
+.nav-link:hover{color:var(--accent)}
+.nav-link::after{content:""; position:absolute; left:0; right:0; bottom:-6px; height:1px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .25s var(--ease)}
+.nav-link:hover::after{transform:scaleX(1)}
+.nav .tel{display:inline-flex; align-items:center; gap:8px; font-size:14.5px; color:var(--ink)}
+.nav .tel:hover{color:var(--accent)}
+.nav-cta{white-space:nowrap}
+
+/* burger */
+.burger{display:none; width:44px; height:44px; flex:none; border:1px solid var(--line); border-radius:var(--r-btn);
+  background:transparent; position:relative; cursor:pointer; z-index:60; transform:translateZ(0); transition:border-color .2s, background .2s}
+.burger:hover{border-color:var(--accent); background:var(--accent-soft)}
+.burger span,.burger span::before,.burger span::after{position:absolute; left:11px; right:11px; height:2px; background:var(--accent); border-radius:2px; transition:transform .3s var(--ease), opacity .2s var(--ease), top .3s var(--ease)}
+.burger span{top:20px}
+.burger span::before,.burger span::after{content:""; left:0; right:0}
+.burger span::before{top:-8px}
+.burger span::after{top:8px}
+.burger.open span{background:transparent}
+.burger.open span::before{top:0; transform:rotate(45deg)}
+.burger.open span::after{top:0; transform:rotate(-45deg)}
+
+@media (max-width:899px){
+  .burger{display:block}
+  .nav{
+    position:fixed; inset:0; z-index:55; flex-direction:column; justify-content:center; gap:6px;
+    padding:80px 24px 40px; background:var(--bg);
+    opacity:0; visibility:hidden;
+    transition:opacity .25s var(--ease), visibility 0s linear .25s;
+  }
+  .nav.open{opacity:1; visibility:visible; transition:opacity .25s var(--ease), visibility 0s}
+  .nav-link{font-family:"Forum",serif; font-size:26px; color:var(--ink); padding:8px 0}
+  .nav-link::after{display:none}
+  .nav .tel{font-size:20px; margin-top:14px}
+  .nav-cta{margin-top:8px; padding:14px 34px; font-size:16px}
+  /* items slide+fade in with stagger; container only fades the opaque backdrop in */
+  .nav.open>*{animation:navItem .45s var(--ease) both}
+  .nav.open>*:nth-child(1){animation-delay:.08s}
+  .nav.open>*:nth-child(2){animation-delay:.13s}
+  .nav.open>*:nth-child(3){animation-delay:.18s}
+  .nav.open>*:nth-child(4){animation-delay:.23s}
+  .nav.open>*:nth-child(5){animation-delay:.28s}
+  .nav.open>*:nth-child(6){animation-delay:.33s}
+  .nav.open>*:nth-child(7){animation-delay:.38s}
+  .nav.open>*:nth-child(8){animation-delay:.43s}
+}
+@keyframes navItem{from{opacity:0; transform:translateY(18px)}to{opacity:1; transform:none}}
+
+/* ============ HERO — падающие игральные карты ============
+   Текст лежит на тёмном фоне сайта; за ним хаотично падают карты (см. скрипт). */
+.hero{position:relative; min-height:100svh; display:flex; align-items:center; overflow:hidden; padding:0; background:var(--bg)}
+.hero-glow{position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(64% 52% at 80% 8%, rgba(201,168,106,.18), transparent 60%),
+    radial-gradient(80% 60% at 8% 92%, rgba(201,168,106,.07), transparent 60%);}
+.hero-inner{position:relative; z-index:3; width:100%; max-width:var(--maxw); margin:0 auto;
+  /* верхний паддинг больше нижнего ровно на высоту фикс-шапки (~70px) —
+     это оптически центрирует массу текста в первом экране под перекрытием меню */
+  padding:110px 20px 40px; display:grid; grid-template-columns:1fr; gap:40px; align-items:center}
+.hero-copy{max-width:640px}
+.hero h1{font-size:clamp(44px,11vw,76px); line-height:1.02; margin:0 0 20px; letter-spacing:.5px}
+.hero h1 span{color:var(--accent)}
+.hero .offer{font-family:"Forum",serif; font-size:clamp(19px,3.2vw,29px); line-height:1.3; color:var(--ink); max-width:22ch; margin:0 0 40px}
+.hero .offer em{color:var(--accent); font-style:normal}
+.hero-cta{display:flex; flex-wrap:wrap; gap:12px}
+.hero-meta{display:flex; gap:14px 24px; margin-top:28px; flex-wrap:wrap; color:var(--ink-soft); font-size:13.5px}
+.hero-meta b{color:var(--accent); font-family:"Forum",serif; font-size:20px; margin-right:6px}
+@media (max-width:600px){
+  .hero-inner{padding:104px 20px 34px}
+  .hero h1{margin-bottom:14px}
+  .hero .offer{margin-bottom:30px}
+  .hero-meta{margin-top:20px; gap:9px 20px}
+}
+
+/* падающие карты — слой за текстом */
+.hero-cards{position:absolute; inset:0; z-index:1; overflow:hidden; perspective:1200px; --fc-w:84px; --fc-h:118px}
+@media (min-width:1000px){.hero-cards{--fc-w:96px; --fc-h:134px}}
+@media (max-width:560px){.hero-cards{--fc-w:64px; --fc-h:90px}}
+.hero-scrim{position:absolute; left:0; right:0; bottom:0; height:46%; z-index:2; pointer-events:none;
+  background:linear-gradient(180deg, transparent, var(--bg) 88%)}
+
+.fcard{position:absolute; top:0; left:0; width:var(--fc-w); height:var(--fc-h); transform-style:preserve-3d; will-change:transform}
+.fc-face{position:absolute; inset:0; border-radius:var(--r-md); overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden}
+.fc-front{background:linear-gradient(162deg,#f7f0e3,#e7dbc4); border:1px solid #cdbb9c; color:#1c1813;
+  box-shadow:0 12px 22px -8px rgba(0,0,0,.6)}
+.fc-front::after{content:""; position:absolute; inset:4px; border:1px solid rgba(28,24,19,.12); border-radius:5px; pointer-events:none}
+.fc-rank{position:absolute; font-family:"Forum",serif; line-height:.74; text-align:center; font-size:calc(var(--fc-w)*0.18); z-index:2}
+.fc-rank i{font-style:normal; display:block; font-size:calc(var(--fc-w)*0.145)}
+.fc-rank.tl{top:6px; left:7px}
+.fc-rank.br{right:7px; bottom:6px; transform:rotate(180deg)}
+.fc-rank.red{color:#bb4430}
+.fc-art{position:absolute; left:50%; top:55%; transform:translate(-50%,-50%); width:84%; color:#1c1813}
+.fc-art svg{width:100%; height:auto; display:block}
+.fc-back{transform:rotateY(180deg); background:#1b1610; border:1px solid var(--accent-deep);
+  background-image:repeating-linear-gradient(45deg, rgba(201,168,106,.16) 0 5px, transparent 5px 11px),
+                   repeating-linear-gradient(-45deg, rgba(201,168,106,.16) 0 5px, transparent 5px 11px);
+  box-shadow:0 12px 22px -8px rgba(0,0,0,.6)}
+.fc-back::before{content:""; position:absolute; inset:6px; border:1px solid rgba(201,168,106,.45); border-radius:5px}
+.fc-back::after{content:"♠"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  color:var(--accent); font-size:calc(var(--fc-w)*0.4); opacity:.5}
+
+/* ============ BOOKING — те же падающие карты на фоне блока ============ */
+#booking{overflow:hidden; background:var(--bg)}
+#booking .wrap{position:relative; z-index:3}
+.book-cards{position:absolute; inset:0; z-index:1; overflow:hidden; perspective:1200px; pointer-events:none; --fc-w:84px; --fc-h:118px}
+@media (min-width:1000px){.book-cards{--fc-w:96px; --fc-h:134px}}
+@media (max-width:560px){.book-cards{--fc-w:64px; --fc-h:90px}}
+/* карты выпадают сверху из градиента и уходят в затемнение снизу */
+.book-scrim{position:absolute; left:0; right:0; z-index:2; pointer-events:none}
+.book-scrim-top{top:0; height:34%; background:linear-gradient(180deg, var(--bg) 12%, transparent)}
+.book-scrim-bot{bottom:0; height:42%; background:linear-gradient(0deg, var(--bg) 12%, transparent)}
+
+/* ============ SERVICES ============ */
+.svc-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; margin-top:34px}
+.svc{
+  background:var(--bg-2); border:1px solid var(--line); border-radius:var(--r-lg);
+  overflow:hidden; display:flex; flex-direction:column;
+  transition:transform .3s var(--ease), border-color .3s, box-shadow .3s;
+}
+.svc:hover{transform:translateY(-4px); border-color:var(--accent); box-shadow:var(--shadow-soft)}
+.svc-ph{aspect-ratio:16/10; overflow:hidden; position:relative; background:#0c0a07}
+.svc-ph img{width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease); opacity:.94}
+.svc:hover .svc-ph img{transform:scale(1.06)}
+.svc-body{padding:16px 18px 18px; display:flex; flex-direction:column; gap:12px; flex:1}
+.svc-name{font-family:"Forum",serif; font-size:20px; line-height:1.15}
+.svc-meta{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-top:auto}
+.svc-price{font-family:"Forum",serif; font-size:30px; color:var(--accent); letter-spacing:.5px; white-space:nowrap}
+/* рубль всегда мельче самой цены — цена перетягивает внимание */
+.rub{font-size:.62em; font-weight:400; color:var(--accent-deep)}
+.svc-dur{font-size:13px; color:var(--ink-soft); display:inline-flex; align-items:center; gap:6px}
+
+/* ============ GALLERY ============ */
+.tabs{display:flex; flex-wrap:wrap; gap:8px; margin:26px 0 22px}
+.tab{
+  font-family:inherit; font-size:13px; letter-spacing:.04em; color:var(--ink-soft);
+  background:transparent; border:1px solid var(--line); border-radius:var(--r-btn);
+  padding:9px 16px; cursor:pointer; transition:all .2s var(--ease);
+}
+.tab:hover{color:var(--ink); border-color:var(--accent)}
+.tab.active{background:var(--accent-soft); border-color:var(--accent); color:var(--accent)}
+.gal{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px}
+@media (min-width:760px){.gal{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}}
+.gal-item{
+  position:relative; aspect-ratio:1; overflow:hidden; border-radius:var(--r-md);
+  cursor:pointer; border:1px solid transparent; background:#0c0a07; padding:0;
+  transition:border-color .25s, transform .25s var(--ease);
+}
+.gal-item img{display:block; width:100%; height:100%; object-fit:cover; transition:transform .55s var(--ease), opacity .3s}
+.gal-item::after{content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(201,168,106,.16),transparent 60%); opacity:0; transition:opacity .25s}
+.gal-item:hover{border-color:var(--accent)}
+.gal-item:hover img{transform:scale(1.07)}
+.gal-item:hover::after{opacity:1}
+.gal-item .zoom{position:absolute; right:9px; bottom:9px; width:30px; height:30px; border-radius:var(--r-sm);
+  background:rgba(22,19,15,.7); display:flex; align-items:center; justify-content:center; opacity:0; transform:translateY(6px); transition:.25s var(--ease)}
+.gal-item:hover .zoom{opacity:1; transform:none}
+.gal-item .zoom svg{width:15px; height:15px; stroke:var(--accent)}
+/* визуальная доминанта: первое фото крупнее (место 4-х плиток) */
+.gal-item.feature{grid-column:span 2; grid-row:span 2}
+.gal-item.gal-hidden{display:none}
+.gal-more-wrap{display:flex; justify-content:center; margin-top:24px}
+
+/* ============ ABOUT / MASTERS ============ */
+.about-grid{display:grid; gap:30px; grid-template-columns:1fr; align-items:center}
+@media (min-width:880px){.about-grid{grid-template-columns:1.05fr .95fr; gap:54px}}
+.about-points{list-style:none; padding:0; margin:24px 0 0; display:grid; gap:18px}
+.about-points li{display:flex; gap:14px}
+.about-points .ic{flex:none; width:38px; height:38px; border:1px solid var(--line); border-radius:var(--r-md); display:flex; align-items:center; justify-content:center}
+.about-points .ic svg{width:19px; height:19px; stroke:var(--accent)}
+.about-points h4{margin:0 0 3px; font-family:"Forum",serif; font-size:18px}
+.about-points p{margin:0; color:var(--ink-soft); font-size:14.5px}
+.about-photo{border-radius:var(--r-lg); overflow:hidden; border:1px solid var(--line); aspect-ratio:4/5; box-shadow:var(--shadow)}
+.about-photo img{width:100%; height:100%; object-fit:cover}
+
+.masters-head{margin-top:54px}
+@media (max-width:880px){.masters-head{margin-top:88px}}
+.masters{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; margin-top:36px}
+.master{background:var(--bg-2); border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden; display:flex; flex-direction:column; transition:transform .3s var(--ease), border-color .3s, box-shadow .3s}
+.master:hover{transform:translateY(-4px); border-color:var(--accent); box-shadow:var(--shadow-soft)}
+.master-ph{aspect-ratio:4/5; overflow:hidden; background:#0c0a07}
+.master-ph img{width:100%; height:100%; object-fit:cover; object-position:center top; transition:transform .5s var(--ease)}
+.master:hover .master-ph img{transform:scale(1.05)}
+.master-body{padding:16px 16px 18px; flex:1; display:flex; flex-direction:column}
+.master-body h4{margin:0 0 6px; font-family:"Forum",serif; font-size:22px}
+.master-body p{margin:0 0 14px; color:var(--ink-soft); font-size:13.6px}
+.master-body .btn{margin-top:auto}
+
+/* ============ REVIEWS ============ */
+.rev-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; margin-top:34px}
+.rev{background:var(--bg-2); border:1px solid var(--line); border-radius:var(--r-lg); padding:24px 22px; display:flex; flex-direction:column}
+.rev .stars{color:var(--accent); letter-spacing:3px; font-size:14px; margin-bottom:14px}
+.rev p{margin:0 0 18px; font-size:14.6px; color:var(--ink)}
+.rev .who{margin-top:auto; display:flex; align-items:center; gap:12px}
+.rev .ava{width:40px; height:40px; border-radius:50%; background:var(--accent-soft); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-family:"Forum",serif; color:var(--accent); font-size:18px}
+.rev .nm{font-weight:500}
+.rev .dt{font-size:12.5px; color:var(--ink-soft)}
+.rev-note{margin-top:22px; color:var(--ink-soft); font-size:13px; display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+.rev-note-part{white-space:nowrap}
+@media (max-width:640px){.rev-note{flex-direction:column; align-items:flex-start; gap:4px} .rev-note-sep{display:none}}
+.rev-note b{color:var(--accent); font-family:"Forum",serif; font-size:17px}
+
+/* ============ FAQ ============ */
+.faq{margin:32px 0 0; display:grid; gap:10px}
+.qa{background:var(--bg-2); border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden}
+.qa summary{list-style:none; cursor:pointer; padding:18px 20px; display:flex; gap:14px; align-items:flex-start; font-size:16px; font-family:"Forum",serif}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary .pl{flex:none; width:20px; height:20px; position:relative; margin-top:3px; transition:transform .3s var(--ease)}
+.qa summary .pl::before,.qa summary .pl::after{content:""; position:absolute; background:var(--accent); transition:opacity .3s}
+.qa summary .pl::before{left:0; top:9px; width:20px; height:2px}
+.qa summary .pl::after{left:9px; top:0; width:2px; height:20px}
+.qa[open] summary .pl::after{opacity:0}
+.qa .ans{padding:0 20px 20px 54px; color:var(--ink-soft); font-size:14.6px; animation:fade .3s var(--ease)}
+@keyframes fade{from{opacity:0; transform:translateY(-4px)}to{opacity:1}}
+
+/* ============ BOOKING FORM ============ */
+.book{background:var(--bg-2); border:1px solid var(--line); border-radius:var(--r-lg); padding:30px 26px; max-width:640px; margin:34px auto 0; box-shadow:var(--shadow)}
+.field{margin-bottom:16px}
+.field label{display:block; font-size:13px; color:var(--ink-soft); margin-bottom:7px; letter-spacing:.02em}
+.field label .req{color:var(--accent)}
+.field input,.field select{
+  width:100%; padding:13px 14px; background:var(--bg); color:var(--ink);
+  border:1px solid var(--line); border-radius:var(--r-md); font-family:inherit; font-size:15px;
+  transition:border-color .2s, box-shadow .2s;
+}
+.field input:focus,.field select:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+.field input.err,.field select.err{border-color:#c0563f; box-shadow:0 0 0 3px rgba(192,86,63,.18)}
+.field select{appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%23C9A86A' stroke-width='2'%3E%3Cpath d='M2 4l5 6 5-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:38px}
+.field .msg{font-size:12.5px; color:#d97a63; margin-top:6px; display:none}
+.field.invalid .msg{display:block}
+.two{display:grid; gap:16px; grid-template-columns:1fr; margin-bottom:16px}
+.two .field{margin-bottom:0}
+@media (min-width:520px){.two{grid-template-columns:1fr 1fr}}
+.book .note{font-size:12px; color:var(--ink-soft); text-align:center; margin-top:14px}
+.success{
+  display:none; flex-direction:column; align-items:center; text-align:center; padding:18px 10px;
+}
+.success.show{display:flex; animation:pop .4s var(--ease)}
+@keyframes pop{from{opacity:0; transform:scale(.94)}to{opacity:1; transform:none}}
+.success .check{width:74px; height:74px; border-radius:50%; background:rgba(74,160,98,.16); border:1px solid rgba(108,196,134,.5); display:flex; align-items:center; justify-content:center; margin-bottom:18px}
+.success .check svg{width:38px; height:38px; stroke:#7fd39b; stroke-width:2.4}
+.success h3{font-size:26px; margin:0 0 8px; color:var(--ink)}
+.success p{color:var(--ink-soft); margin:0 0 20px}
+
+/* ============ CONTACTS ============ */
+.contact-grid{display:grid; gap:26px; grid-template-columns:1fr; margin-top:34px}
+@media (min-width:880px){.contact-grid{grid-template-columns:1fr 1.1fr}}
+.cinfo{display:grid; gap:18px; align-content:start}
+.crow{display:flex; gap:14px; align-items:flex-start}
+.crow .ic{flex:none; width:42px; height:42px; border:1px solid var(--line); border-radius:var(--r-md); display:flex; align-items:center; justify-content:center}
+.crow .ic svg{width:20px; height:20px; stroke:var(--accent)}
+.crow h4{margin:0 0 3px; font-size:13px; text-transform:uppercase; letter-spacing:.18em; color:var(--ink-soft); font-family:"Commissioner",sans-serif; font-weight:500}
+.crow p,.crow a{margin:0; font-size:15.5px; color:var(--ink)}
+.crow a:hover{color:var(--accent)}
+/* WhatsApp/Telegram — отдельная строка под почтой, по левому краю колонки;
+   увеличенный отступ сверху даёт визуальный отрыв от блока «Почта» */
+.contact-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+.map{border-radius:var(--r-lg); overflow:hidden; border:1px solid var(--line); min-height:380px; box-shadow:var(--shadow-soft); background:var(--bg-2)}
+.map iframe{width:100%; height:100%; min-height:330px; border:0; display:block; filter:grayscale(.3) contrast(1.05)}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line); padding:34px 0 26px; color:var(--ink-soft); font-size:13px}
+.foot{display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center}
+
+/* ============ STICKY + FLOAT ============ */
+.floats{position:fixed; right:16px; bottom:24px; z-index:36; display:flex; flex-direction:column; gap:12px}
+.fab{width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-soft); transition:transform .2s var(--ease)}
+.fab:hover{transform:translateY(-3px) scale(1.05)}
+.fab svg{width:26px; height:26px}
+.fab.wa{background:#1faf54}
+.fab.tg{background:#2aabee}
+
+/* ============ LIGHTBOX ============ */
+.lb{position:fixed; inset:0; z-index:60; background:rgba(10,8,6,.94); backdrop-filter:blur(4px);
+  display:none; align-items:center; justify-content:center; opacity:0; transition:opacity .25s var(--ease)}
+.lb.open{display:flex; opacity:1}
+.lb img{max-width:92vw; max-height:84vh; border-radius:var(--r-md); box-shadow:0 30px 80px -20px #000;
+  transform:scale(.96); transition:transform .3s var(--ease); user-select:none; -webkit-user-drag:none}
+.lb.open img{transform:scale(1)}
+.lb-close{position:absolute; z-index:2; top:18px; right:18px; width:46px; height:46px; border-radius:50%;
+  background:rgba(255,255,255,.07); border:1px solid var(--line); color:var(--ink); cursor:pointer;
+  display:flex; align-items:center; justify-content:center; transition:.2s}
+.lb-close:hover{background:var(--accent-soft); border-color:var(--accent)}
+.lb-close svg{width:20px; height:20px; stroke:currentColor}
+.lb-nav{position:absolute; z-index:2; top:50%; transform:translateY(-50%); width:50px; height:50px; border-radius:50%;
+  background:rgba(255,255,255,.06); border:1px solid var(--line); color:var(--ink); cursor:pointer;
+  display:flex; align-items:center; justify-content:center; transition:.2s}
+.lb-nav:hover{background:var(--accent-soft); border-color:var(--accent)}
+.lb-nav svg{width:22px; height:22px; stroke:currentColor}
+.lb-prev{left:14px} .lb-next{right:14px}
+.lb-count{position:absolute; z-index:2; bottom:20px; left:50%; transform:translateX(-50%); font-size:14px; color:var(--ink-soft); letter-spacing:.1em}
+.lb-count b{color:var(--accent)}
+@media (max-width:640px){.lb-nav{width:42px;height:42px} .lb-prev{left:6px} .lb-next{right:6px}}
+
+/* reveal */
+.reveal{opacity:0; transform:translateY(20px); transition:opacity .6s var(--ease), transform .6s var(--ease)}
+.reveal.in{opacity:1; transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1 !important; transform:none !important; transition:none !important}
+  *{animation-duration:.001ms !important; transition-duration:.05ms !important}
+  .gal-item:hover img,.svc:hover .svc-ph img,.master:hover .master-ph img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><img class="brand-logo" src="pictures/logo.png" alt="Логотип Full House" width="44" height="44"><span class="brand-name">Full <b>House</b></span></a>
+    <nav class="nav" id="nav">
+      <a class="nav-link" href="#works">Работы</a>
+      <a class="nav-link" href="#services">Услуги</a>
+      <a class="nav-link" href="#about">Мастера</a>
+      <a class="nav-link" href="#reviews">Отзывы</a>
+      <a class="nav-link" href="#faq">Вопросы</a>
+      <a class="tel" href="tel:+79529323000">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        +7 952 932-30-00
+      </a>
+      <a class="btn btn-primary btn-sm nav-cta" href="#booking">Записаться</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+
+<!-- ===== HERO =====
+     Текст — на тёмном фоне сайта; за ним хаотично падают игральные карты
+     (слой .hero-cards заполняет скрипт). -->
+<section class="hero" id="top">
+  <span class="hero-glow" aria-hidden="true"></span>
+  <div class="hero-cards" id="heroCards" aria-hidden="true"></div>
+  <span class="hero-scrim" aria-hidden="true"></span>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Барбершоп<br>на <span>Горской</span></h1>
+      <p class="offer reveal">Создаём клиентам <em>стиль и индивидуальный образ</em> уже больше 4 лет.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="#booking">Записаться</a>
+        <a class="btn btn-ghost" href="#services">Услуги и цены</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span><b>5.0</b>рейтинг на Яндекс и 2ГИС</span>
+        <span><b>4+</b>года стрижём район</span>
+        <span><b>от&nbsp;1200&nbsp;<span class="rub">₽</span></b>мужская стрижка</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="works">
+  <div class="wrap">
+    <p class="eyebrow reveal">Наши работы</p>
+    <h2 class="title reveal">Результат с эффектом «вау»</h2>
+    <p class="lead reveal">Реальные фото из кресла. Нажмите на снимок, чтобы открыть на весь экран и пролистать.</p>
+    <div class="tabs reveal" id="tabs"></div>
+    <div class="gal" id="gal"></div>
+    <div class="gal-more-wrap reveal"><button class="btn btn-ghost" id="galMore" type="button" aria-expanded="false">Посмотреть все</button></div>
+  </div>
+</section>
+
+<div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14l5.5 6M8.1 8.1 12 12"/></svg></div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow reveal">Услуги и цены</p>
+    <h2 class="title reveal">Всё открыто — без сюрпризов на кассе</h2>
+    <p class="lead reveal">Выберите услугу — она автоматически подставится в форму записи.</p>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+
+<!-- ===== ABOUT + MASTERS ===== -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow reveal">О барбершопе</p>
+        <h2 class="title reveal">Понимаем с полуслова</h2>
+        <p class="lead reveal">Мы не стрижём «по шаблону». Мастер строит причёску под геометрию вашего лица, структуру волос и форму головы — поэтому результат подходит именно вам. Можно прийти с фоткой причёски или бороды, которая вам нравится: разберёмся вместе.</p>
+        <ul class="about-points">
+          <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 2 7h10c0-2 2-4 2-7a7 7 0 0 0-7-7z"/><path d="M9 21h6"/></svg></span><div><h4>Индивидуальный подход</h4><p>Стрижку и бороду строим под черты лица и форму головы.</p></div></li>
+          <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></span><div><h4>Девушки-барберы — это сила</h4><p>Внимательность и аккуратность, за которые нас и хвалят в отзывах.</p></div></li>
+          <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></span><div><h4>Барбершоп рядом с домом</h4><p>Не нужно ехать в центр — настоящий барбершоп прямо на Горской.</p></div></li>
+        </ul>
+      </div>
+      <div class="about-photo reveal"><img src="pictures/Works_5.webp" alt="Работа мастера Full House" loading="lazy"></div>
+    </div>
+
+    <p class="eyebrow reveal masters-head">Наши мастера</p>
+    <h2 class="title reveal">Кто будет вас стричь</h2>
+    <div class="masters" id="masters"></div>
+  </div>
+</section>
+
+<div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14l5.5 6M8.1 8.1 12 12"/></svg></div>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+  <div class="wrap">
+    <p class="eyebrow reveal">Отзывы</p>
+    <h2 class="title reveal">Что говорят наши гости</h2>
+    <div class="rev-grid" id="revGrid"></div>
+    <p class="rev-note reveal"><span class="rev-note-part"><b>5.0</b> на Яндекс Картах (314 отзывов)</span><span class="rev-note-sep">·</span><span class="rev-note-part"><b>5.0</b> в 2ГИС (579 отзывов).</span><span class="rev-note-part">Тексты приведены дословно.</span></p>
+  </div>
+</section>
+
+<div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow reveal">Вопросы и сомнения</p>
+    <h2 class="title reveal">Если идёте к нам впервые</h2>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===== BOOKING ===== -->
+<section id="booking">
+  <div class="book-cards" id="bookingCards" aria-hidden="true"></div>
+  <span class="book-scrim book-scrim-top" aria-hidden="true"></span>
+  <span class="book-scrim book-scrim-bot" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center">Онлайн-запись</p>
+    <h2 class="title reveal" style="text-align:center">Запишитесь за минуту</h2>
+    <p class="lead reveal" style="margin:0 auto; text-align:center">Оставьте имя и телефон — мы перезвоним и подтвердим время. Без предоплаты.</p>
+
+    <form class="book reveal" id="bookForm" novalidate>
+      <div class="field">
+        <label for="f-name">Имя <span class="req">*</span></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться">
+        <div class="msg">Пожалуйста, введите имя.</div>
+      </div>
+      <div class="field">
+        <label for="f-phone">Телефон <span class="req">*</span></label>
+        <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__">
+        <div class="msg">Введите корректный номер: +7 и 10 цифр.</div>
+      </div>
+      <div class="two">
+        <div class="field">
+          <label for="f-service">Услуга</label>
+          <select id="f-service" name="service"></select>
+        </div>
+        <div class="field">
+          <label for="f-master">Мастер</label>
+          <select id="f-master" name="master"></select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-time">Удобное время</label>
+        <select id="f-time" name="time"></select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:14px">Записаться</button>
+      <p class="note">Нажимая «Записаться», вы оставляете заявку — оплата и подтверждение при визите.</p>
+    </form>
+
+    <div class="book success" id="success" role="status" aria-live="polite">
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#7fd39b"><path d="M5 13l4 4L19 7"/></svg></div>
+      <h3>Вы записаны!</h3>
+      <p>Мы скоро с вами свяжемся и подтвердим время.</p>
+      <button class="btn btn-ghost btn-sm" id="againBtn">Записать ещё одного</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14l5.5 6M8.1 8.1 12 12"/></svg></div>
+
+<!-- ===== CONTACTS ===== -->
+<section id="contacts">
+  <div class="wrap">
+    <p class="eyebrow reveal">Контакты</p>
+    <h2 class="title reveal">Как нас найти</h2>
+    <div class="contact-grid">
+      <div class="cinfo">
+        <div class="crow reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h4>Адрес</h4><p>Горский микрорайон, 78, Новосибирск<br>Цокольный этаж, офис 5 — по коридору</p>
+          <p style="color:var(--ink-soft); font-size:13.5px; margin-top:6px">Ориентир: ~1,5 км от м. Студенческая. Рядом есть парковка. Заходите со двора, спускайтесь на цоколь и идите по коридору до офиса 5 — заблудиться не дадим, звоните, подскажем.</p></div>
+        </div>
+        <div class="crow reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><h4>Телефон</h4><a href="tel:+79529323000">+7 952 932-30-00</a></div>
+        </div>
+        <div class="crow reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><h4>Часы работы</h4><p>Пн–Пт 10:00–21:00<br>Сб–Вс 10:00–20:00</p></div>
+        </div>
+        <div class="crow reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div><h4>Почта</h4><a href="mailto:fullhouse.nsk@yandex.ru">fullhouse.nsk@yandex.ru</a></div>
+        </div>
+        <div class="contact-actions reveal">
+          <a class="btn btn-ghost btn-sm" href="https://wa.me/79529323000" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-ghost btn-sm" href="https://t.me/Fullhouse_nsk" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe loading="lazy" title="Карта — Full House, Горский микрорайон 78"
+          src="https://yandex.ru/map-widget/v1/?ll=82.891028%2C54.993913&z=17&pt=82.891028%2C54.993913%2Cpm2rdm"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <p class="eyebrow reveal" style="margin-top:54px">Внутри</p>
+    <h2 class="title reveal">Атмосфера Full House</h2>
+    <p class="lead reveal">Уютно, чисто, стильно — музыка, кофе и Wi-Fi прилагаются. Загляните, как у нас внутри.</p>
+    <div class="gal" id="office" style="margin-top:22px"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span class="brand" style="font-size:18px"><img class="foot-logo" src="pictures/logo.png" alt="Логотип Full House" width="34" height="34"><span class="brand-name">Full <b>House</b></span></span>
+    <span>© 2026 Full House · барбершоп на Горской, Новосибирск</span>
+  </div>
+</footer>
+
+<!-- floats -->
+<div class="floats">
+  <a class="fab wa" href="https://wa.me/79529323000" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.549 4.142 1.595 5.945L0 24l6.305-1.654a11.962 11.962 0 005.71 1.454h.005c6.585 0 11.946-5.359 11.949-11.893a11.821 11.821 0 00-3.495-8.458"/></svg>
+  </a>
+  <a class="fab tg" href="https://t.me/Fullhouse_nsk" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.2 13.6 1.4 12c-1-.3-1-1 .2-1.5l19-7.3c.9-.3 1.6.2 1.3 1.1z"/></svg>
+  </a>
+</div>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="lb-close" id="lbClose" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lb-count"><b id="lbCur">1</b> / <span id="lbTot">1</span></div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- DATA (только из файлов проекта) ---------- */
+var SERVICES = [
+  // Стрижки
+  {id:"cut_fade", name:"Стрижка мужская «Фейд»", price:"1 500 ₽", dur:"30 мин", img:"service_cut_fade"},
+  {id:"cut_styling", name:"Стрижка мужская с укладкой", price:"1 500 ₽", dur:"30 мин", img:"service_cut_styling"},
+  {id:"cut_long", name:"Стрижка мужская удлинённая", price:"1 700 ₽", dur:"30 мин", img:"service_cut_long"},
+  {id:"cut_bald", name:"Стрижка машинкой наголо", price:"1 200 ₽", dur:"30 мин", img:"service_cut_bald"},
+  {id:"cut_kids", name:"Стрижка детям до 7 лет", price:"1 200 ₽", dur:"30 мин", img:"service_cut_kids"},
+  // Борода и камуфляж
+  {id:"beard_modeling", name:"Моделирование бороды", price:"1 200 ₽", dur:"30 мин", img:"service_beard_modeling"},
+  {id:"camouflage_beard", name:"Камуфляж бороды", price:"1 200 ₽", dur:"30 мин", img:"service_camouflage_beard"},
+  {id:"camouflage_head", name:"Камуфляж головы", price:"1 200 ₽", dur:"30 мин", img:"service_camouflage_head"},
+  // Комплексы — от дешёвого к дорогому
+  {id:"combo_cut_beard", name:"Комплекс: стрижка и борода", price:"2 500 ₽", dur:"60 мин", img:"service_combo_cut_beard"},
+  {id:"combo_cut_camo", name:"Комплекс: стрижка и камуфляж", price:"2 500 ₽", dur:"60 мин", img:"service_combo_cut_camo"},
+  {id:"combo_cut_beard_camo", name:"Комплекс: стрижка, борода и камуфляж", price:"3 700 ₽", dur:"60 мин", img:"service_combo_cut_beard_camo"},
+  {id:"combo_full", name:"Комплекс: стрижка и камуфляж, борода и камуфляж", price:"5 000 ₽", dur:"60 мин", img:"service_combo_full"},
+  // Дополнительно
+  {id:"perm", name:"Химическая завивка", price:"5 000 ₽", dur:"60 мин", img:"service_perm"},
+  {id:"figure_element", name:"Фигурный элемент", price:"200 ₽", dur:"5 мин", img:"service_figure_element"}
+];
+
+var MASTERS = [
+  {id:"natali", name:"Натали", img:"master_natali",
+   bio:"Самый востребованный мастер — к ней возвращаются годами. Слышит с полуслова, строит стрижку под черты лица. Отлично работает с детьми и химической завивкой."},
+  {id:"alina", name:"Алина", img:"master_alina",
+   bio:"Внимательно выслушает и подскажет, что подойдёт именно вам. Находит подход к подросткам и непростым запросам, учитывает особенности волос."},
+  {id:"inna", name:"Инна", img:"master_inna",
+   bio:"«Техника мягкой руки» — работает мягко, чётко и быстро. Чистый фейд и точное понимание задачи с полуслова."},
+  {id:"kristina", name:"Кристина", img:"master_kristina",
+   bio:"Мастер Full House. Запишитесь — и познакомьтесь лично."}
+];
+
+var REVIEWS = [
+  {name:"Павел", date:"Яндекс · 17 мая", text:"Full House — отличное место! На мой взгляд, это единственный настоящий барбершоп в нашем микрорайоне, и он определенно лучший. Девушки-барберы — настоящие профессионалы своего дела и большие умницы. Понимают с полуслова и делают по-настоящему красивую и аккуратную стрижку. Результат всегда получается с эффектом «вау», когда смотришь на себя в зеркало. Очень рекомендую!"},
+  {name:"Илья", date:"Яндекс · 16 февраля 2025", text:"Волею судьбы посетил вновь данное заведение, несмотря на то что живу на другом конце города! Очень нравится как работают мастера. Стригся у всех кто здесь работает и могу с уверенностью заявить, что это очень высокий уровень и ответственный подход к рабочему процессу. 👍 мастер Инна всегда работает четко и понимает потребность клиента. Здесь работают квалифицированные специалисты, а не выпускники трёхнедельных курсов по барберингу, это быстро поймёте сами) смело рекомендую для посещения!"},
+  {name:"Max Degtyarev", date:"Яндекс · 22 августа 2025", text:"Ходил в этот барбершоп первый раз и остался очень доволен. Атмосфера уютная, всё чисто и стильно. Отдельное спасибо мастеру Алине — она внимательно выслушала мои пожелания, подсказала, что будет лучше, и сделала отличный результат. Стрижка получилась именно такой, как я хотел. Видно, что Алина профессионал своего дела и работает с душой. Обязательно приду ещё!"},
+  {name:"Елена Пономарева", date:"Яндекс · 31 мая 2025", text:"Были с сыном в этом приятном местечке впервые. Долго искали мастера, которому можно довериться без опасений и разочарований в конечном результате и наконец-то нашли. Буквально несколько ключевых фраз, описывающих наши ожидания, и великолепный финал преображения. Без лишних слов, чётко, оперативно и качественно... Придём ещё не один раз, теперь мы ваши навеки ❤️ Мастеру Наталье 10 баллов из 10 возможных, профессионал своего дела 👏"},
+  {name:"Линар Тугусов", date:"2ГИС · 12 июня 2026", text:"Первый раз пошёл в барбершоп, всё понравилось. Бороду никогда не отращивал, а тут решил отпустить её. Это был первый поход к барберу. Сделали стрижку и оформили бороду, результат понравился. Учли все пожелания. Объяснили по уходу за бородой. Всё классно!"},
+  {name:"Александр Ширяев", date:"2ГИС · 28 ноября 2025", text:"Отличный сервис! Большое спасибо мастеру Алине: учла все пожелания, работа была выполнена с вниманием ко всем деталям. Уютная атмосфера. Цены разумные. Рекомендую!"}
+];
+
+var FAQ = [
+  {q:"Мастер поймёт, чего я хочу?",
+   a:"Мастер расспросит, подскажет и поможет определиться — а если хотите, приходите с фото-референсом. Нас и хвалят за то, что мастера понимают с полуслова и учитывают все пожелания."},
+  {q:"А вдруг сделают не то, что хочу?",
+   a:"Мастер обсуждает форму до начала работы и показывает результат в процессе. Стрижку строим под черты лица и форму головы — а не по одному шаблону на всех."},
+  {q:"У вас женщины-барберы — это нормально?",
+   a:"Да, и это наша сила. За внимательность и аккуратность нас особенно отмечают в отзывах. Натали, Алина, Инна — мастера, к которым возвращаются."},
+  {q:"Сколько в итоге заплачу? Не будет дороже на кассе?",
+   a:"Цены открыты и честны — они указаны в разделе «Услуги и цены» и совпадают с тем, что вы платите. Никаких сюрпризов."},
+  {q:"Ребёнка подстрижёте, найдёте подход?",
+   a:"Да, мастера отлично ладят с детьми и подростками — об этом часто пишут родители в отзывах."},
+  {q:"Как вас найти? Цоколь, офис — боюсь заблудиться.",
+   a:"Горский микрорайон, 78, ориентир ~1,5 км от м. Студенческая. Цокольный этаж, офис 5 — спускаетесь и идёте по коридору. Рядом парковка, внутри Wi-Fi. Если что — позвоните, подскажем дорогу."},
+  {q:"Надо ли записываться заранее?",
+   a:"Лучше по записи — так не придётся ждать. Оставьте заявку в форме на сайте или напишите нам в WhatsApp / Telegram."}
+];
+
+/* галерея работ — категории по факту фото */
+var WORK_FILES = ["Works_1","Works_2","Works_3","Works_4","Works_5","Works_6","Works_7","Works_8","Works_9","Works_10","Works_11","Works_12","Works_13","Works_14","Works_15","Works_16","Works_17","Works_18","Works_19","Works_20","Works_21","Works_22","Works_23","Works_24","Works_25","Works_26","Works_27","Works_28","Works_29","Works_30","Works_31","Works_32","Works_33","Works_34","Works_35","Works_36","Works_37","Works_38","Works_39","Works_40","Works_41","Works_42","Works_43","Works_44","Works_45","Works_46","Works_47","Works_48","Works_49","Works_50","Works_51","Works_52","Works_53","Works_54","works_55","Works_56","Works_57","Works_58"];
+var CAT = {beard:[1,4,10,15,16,17,19,23,25,47,48,52,54], perm:[11,13,18,24,27,31,33,34,35,37,38,39,40,42,43,44,45,56,57,58], kids:[7,55]};
+function catOf(n){ if(CAT.beard.indexOf(n)>-1)return"beard"; if(CAT.perm.indexOf(n)>-1)return"perm"; if(CAT.kids.indexOf(n)>-1)return"kids"; return"cut"; }
+var WORKS = WORK_FILES.map(function(f){var n=parseInt(f.match(/(\d+)/)[1],10); return {file:"pictures/"+f+".webp", cat:catOf(n)};});
+var TABS = [{id:"all",label:"Все работы"},{id:"cut",label:"Стрижки"},{id:"beard",label:"Бороды"},{id:"perm",label:"Завивка"},{id:"kids",label:"Дети"}];
+
+var OFFICE = ["office_0","office_01","office_1","office_2","office_3","office_4","office_5","office_6"].map(function(f){return "pictures/"+f+".webp";});
+
+var TIMES = []; for(var h=10; h<=21; h++){ TIMES.push((h<10?"0":"")+h+":00"); }
+
+/* ---------- RENDER ---------- */
+var $ = function(s,r){return (r||document).querySelector(s);};
+function el(html){var t=document.createElement("template"); t.innerHTML=html.trim(); return t.content.firstChild;}
+var zoomIco='<span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>';
+
+// рубль мельче цены + неразрывные пробелы внутри цены ("1 200 ₽" → "1 200 ₽")
+function priceHTML(p){
+  return p.replace(/\s*₽\s*$/, ' <span class="rub">₽</span>')
+          .replace(/(\d)\s+(\d)/g, '$1 $2');
+}
+
+// services
+var sg = $("#svcGrid");
+SERVICES.forEach(function(s){
+  var card = el('<article class="svc reveal">'+
+    '<div class="svc-ph"><img loading="lazy" src="pictures/'+s.img+'.webp" alt="'+s.name+'"></div>'+
+    '<div class="svc-body">'+
+      '<div class="svc-name">'+s.name+'</div>'+
+      '<div class="svc-meta"><span class="svc-price">'+priceHTML(s.price)+'</span>'+
+        '<span class="svc-dur"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B6AC9B" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'+s.dur+'</span></div>'+
+      '<button class="btn btn-ghost btn-sm btn-block" data-svc="'+s.id+'">Записаться</button>'+
+    '</div></article>');
+  sg.appendChild(card);
+});
+
+// service select
+var selSvc = $("#f-service");
+selSvc.appendChild(el('<option value="">Выберите услугу</option>'));
+SERVICES.forEach(function(s){ selSvc.appendChild(el('<option value="'+s.id+'">'+s.name+' · '+s.price+'</option>')); });
+
+// masters
+var mg = $("#masters");
+MASTERS.forEach(function(m){
+  var card = el('<article class="master reveal">'+
+    '<div class="master-ph"><img loading="lazy" src="pictures/'+m.img+'.webp" alt="Мастер '+m.name+'"></div>'+
+    '<div class="master-body"><h4>'+m.name+'</h4><p>'+m.bio+'</p>'+
+      '<button class="btn btn-ghost btn-sm btn-block" data-master="'+m.id+'">Записаться к мастеру</button>'+
+    '</div></article>');
+  mg.appendChild(card);
+});
+// master select
+var selM = $("#f-master");
+selM.appendChild(el('<option value="">Любой мастер</option>'));
+MASTERS.forEach(function(m){ selM.appendChild(el('<option value="'+m.id+'">'+m.name+'</option>')); });
+
+// time select
+var selT = $("#f-time");
+selT.appendChild(el('<option value="">Выберите время</option>'));
+TIMES.forEach(function(t){ selT.appendChild(el('<option value="'+t+'">'+t+'</option>')); });
+
+// reviews
+var rg = $("#revGrid");
+REVIEWS.forEach(function(r){
+  rg.appendChild(el('<article class="rev reveal"><div class="stars">★★★★★</div>'+
+    '<p>'+r.text+'</p>'+
+    '<div class="who"><span class="ava">'+r.name.charAt(0)+'</span><div><div class="nm">'+r.name+'</div><div class="dt">'+r.date+'</div></div></div></article>'));
+});
+
+// faq
+var fg = $("#faqList");
+FAQ.forEach(function(f){
+  fg.appendChild(el('<details class="qa reveal"><summary><span class="pl"></span><span>'+f.q+'</span></summary><div class="ans">'+f.a+'</div></details>'));
+});
+
+/* ---------- GALLERY + TABS ---------- */
+var galEl = $("#gal"), tabsEl = $("#tabs"), galMore = $("#galMore");
+var GAL_LIMIT = 12;       // сколько плиток показываем до «Посмотреть все»
+var galExpanded = false;  // раскрыта ли плитка целиком
+function updateGalCollapse(total){
+  var items = galEl.children, i;
+  for(i=0;i<items.length;i++){
+    items[i].classList.toggle("gal-hidden", !galExpanded && i>=GAL_LIMIT);
+  }
+  if(total>GAL_LIMIT){
+    galMore.style.display="";
+    galMore.textContent = galExpanded ? "Свернуть" : "Посмотреть все";
+    galMore.setAttribute("aria-expanded", galExpanded ? "true" : "false");
+  } else {
+    galMore.style.display="none";
+  }
+}
+function paintGallery(cat){
+  galEl.innerHTML="";
+  var list = WORKS.filter(function(w){return cat==="all"||w.cat===cat;});
+  list.forEach(function(w,i){
+    var cls = "gal-item" + (i===0 ? " feature" : "");   // первое фото — доминанта
+    var item = el('<button class="'+cls+'" data-gallery="works" data-idx="'+i+'"><img loading="lazy" src="'+w.file+'" alt="Работа барбершопа Full House">'+zoomIco+'</button>');
+    galEl.appendChild(item);
+  });
+  galleryCache.works = list.map(function(w){return w.file;});
+  galExpanded = false;                  // при смене вкладки — снова свёрнуто
+  updateGalCollapse(list.length);
+}
+galMore.addEventListener("click", function(){
+  galExpanded = !galExpanded;
+  updateGalCollapse(galEl.children.length);
+  if(!galExpanded){ // «Свернуть» — вернуть пользователя к началу блока, чтобы не оказаться в пустоте
+    document.getElementById("works").scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"start"});
+  }
+});
+TABS.forEach(function(t,i){
+  var b = el('<button class="tab'+(i===0?' active':'')+'" data-cat="'+t.id+'">'+t.label+'</button>');
+  tabsEl.appendChild(b);
+});
+tabsEl.addEventListener("click", function(e){
+  var b = e.target.closest(".tab"); if(!b) return;
+  Array.prototype.forEach.call(tabsEl.children,function(c){c.classList.remove("active");});
+  b.classList.add("active");
+  paintGallery(b.getAttribute("data-cat"));
+});
+
+// office gallery
+var officeEl = $("#office");
+OFFICE.forEach(function(src,i){
+  officeEl.appendChild(el('<button class="gal-item" data-gallery="office" data-idx="'+i+'"><img loading="lazy" src="'+src+'" alt="Интерьер барбершопа Full House">'+zoomIco+'</button>'));
+});
+var galleryCache = {works:[], office:OFFICE.slice()};
+paintGallery("all");
+
+/* ---------- LIGHTBOX ---------- */
+var lb=$("#lb"), lbImg=$("#lbImg"), lbCur=$("#lbCur"), lbTot=$("#lbTot");
+var lbList=[], lbIdx=0;
+function openLB(name, idx){
+  lbList = galleryCache[name]; lbIdx=idx;
+  showLB(); lb.classList.add("open"); document.body.style.overflow="hidden";
+}
+function showLB(){
+  lbImg.src = lbList[lbIdx];
+  lbCur.textContent = (lbIdx+1); lbTot.textContent = lbList.length;
+}
+function moveLB(d){ lbIdx=(lbIdx+d+lbList.length)%lbList.length; lbImg.style.opacity=0; setTimeout(function(){showLB(); lbImg.style.opacity=1;},90); }
+function closeLB(){ lb.classList.remove("open"); document.body.style.overflow=""; }
+document.addEventListener("click", function(e){
+  var g=e.target.closest("[data-gallery]");
+  if(g){ openLB(g.getAttribute("data-gallery"), +g.getAttribute("data-idx")); }
+});
+$("#lbClose").onclick=closeLB;
+$("#lbPrev").onclick=function(){moveLB(-1);};
+$("#lbNext").onclick=function(){moveLB(1);};
+lb.addEventListener("click", function(e){ if(e.target===lb) closeLB(); });
+document.addEventListener("keydown", function(e){
+  if(!lb.classList.contains("open")) return;
+  if(e.key==="Escape") closeLB();
+  else if(e.key==="ArrowLeft") moveLB(-1);
+  else if(e.key==="ArrowRight") moveLB(1);
+});
+// swipe
+var tx=0;
+lb.addEventListener("touchstart", function(e){tx=e.changedTouches[0].clientX;}, {passive:true});
+lb.addEventListener("touchend", function(e){
+  var dx=e.changedTouches[0].clientX-tx;
+  if(Math.abs(dx)>45) moveLB(dx<0?1:-1);
+}, {passive:true});
+
+/* ---------- PREFILL FROM CARDS ---------- */
+function scrollToForm(){ var t=document.getElementById("booking"); t.scrollIntoView({behavior:"smooth"}); }
+document.addEventListener("click", function(e){
+  var sv=e.target.closest("[data-svc]");
+  if(sv){ selSvc.value=sv.getAttribute("data-svc"); flash(selSvc); scrollToForm(); return; }
+  var ms=e.target.closest("[data-master]");
+  if(ms){ selM.value=ms.getAttribute("data-master"); flash(selM); scrollToForm(); }
+});
+function flash(node){ node.style.transition="box-shadow .25s"; node.style.boxShadow="0 0 0 3px var(--accent-soft)"; setTimeout(function(){node.style.boxShadow="";},900); }
+
+/* ---------- PHONE MASK + VALIDATION ---------- */
+var phone=$("#f-phone");
+function formatPhone(v){
+  var d=v.replace(/\D/g,"");
+  if(d.startsWith("8")) d="7"+d.slice(1);
+  if(!d.startsWith("7")) d="7"+d;
+  d=d.slice(0,11);
+  var r="+7";
+  if(d.length>1) r+=" ("+d.slice(1,4);
+  if(d.length>=4) r+=") "+d.slice(4,7);
+  if(d.length>=7) r+="-"+d.slice(7,9);
+  if(d.length>=9) r+="-"+d.slice(9,11);
+  return r;
+}
+phone.addEventListener("focus", function(){ if(!phone.value) phone.value="+7 ("; });
+phone.addEventListener("input", function(){ phone.value=formatPhone(phone.value); });
+phone.addEventListener("blur", function(){ if(phone.value==="+7 (") phone.value=""; });
+function phoneValid(){ return phone.value.replace(/\D/g,"").length===11; }
+function nameValid(){ return $("#f-name").value.trim().length>=2; }
+
+function setErr(field, on){
+  var wrap=field.closest(".field");
+  wrap.classList.toggle("invalid", on); field.classList.toggle("err", on);
+}
+$("#f-name").addEventListener("input", function(){ if(nameValid()) setErr($("#f-name"),false); });
+phone.addEventListener("input", function(){ if(phoneValid()) setErr(phone,false); });
+
+/* ---------- SUBMIT ---------- */
+var form=$("#bookForm"), success=$("#success");
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  var ok=true;
+  if(!nameValid()){ setErr($("#f-name"),true); ok=false; }
+  if(!phoneValid()){ setErr(phone,true); ok=false; }
+  if(!ok){ var bad=form.querySelector(".invalid input"); if(bad) bad.focus(); return; }
+  // НИКАКИХ запросов и переходов — только показ плашки успеха.
+  form.style.display="none";
+  success.classList.add("show");
+  success.scrollIntoView({behavior:"smooth", block:"center"});
+});
+$("#againBtn").addEventListener("click", function(){
+  form.reset();
+  success.classList.remove("show");
+  form.style.display="";
+  form.scrollIntoView({behavior:"smooth", block:"center"});
+});
+
+/* ---------- HEADER SCROLL ---------- */
+var topbar=$("#topbar");
+function onScroll(){ topbar.classList.toggle("scrolled", window.scrollY>40); }
+onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
+
+/* ---------- BURGER / MOBILE NAV ---------- */
+var burger=$("#burger"), nav=$("#nav");
+function setMenu(open){
+  burger.classList.toggle("open", open);
+  nav.classList.toggle("open", open);
+  burger.setAttribute("aria-expanded", open?"true":"false");
+  burger.setAttribute("aria-label", open?"Закрыть меню":"Открыть меню");
+  document.body.style.overflow = open ? "hidden" : "";
+}
+burger.addEventListener("click", function(){ setMenu(!nav.classList.contains("open")); });
+nav.addEventListener("click", function(e){ if(e.target.closest("a")) setMenu(false); });
+document.addEventListener("keydown", function(e){ if(e.key==="Escape" && nav.classList.contains("open")) setMenu(false); });
+// close the mobile overlay if viewport grows back to desktop
+window.matchMedia("(min-width:900px)").addEventListener("change", function(e){ if(e.matches) setMenu(false); });
+
+/* ---------- HERO ВАРИАНТ 2: ПАДАЮЩИЕ ИГРАЛЬНЫЕ КАРТЫ ----------
+   Лёгкая физика на requestAnimationFrame: гравитация с «терминальной скоростью»
+   (имитация сопротивления воздуха), покачивание, вращение, 3D-переворот (rotateY),
+   попарные столкновения с отскоком. Только transform; пауза вне экрана/во вкладке;
+   prefers-reduced-motion → статичная раскладка без анимации. */
+function fallingCards(stage, opts){
+  if(!stage) return;
+  opts = opts || {};
+
+  var reduce = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  var ranks=["A","K","J"];
+  var suits=[{s:"♠",red:false},{s:"♥",red:true},{s:"♣",red:false},{s:"♦",red:true}];
+
+  /* портреты мужчин с разными причёсками (мотив логотипа). Тёмная тушь = currentColor */
+  /* Барбер-портреты в стиле чёрной туши (как референсы): крупный силуэт волос,
+     настоящая борода/щетина, у одного — очки. Единый шаблон лица для всех. */
+  var PORTRAITS=[
+    /* 1 — помпадур + очки + щетина */
+    {hair:'<path d="M30 58C24 46 25 31 35 23 46 14 64 13 76 22 86 29 87 41 82 51 80 44 74 38 66 38 70 31 64 27 57 29 51 27 45 30 42 36 39 31 35 32 32 38 30 45 30 52 30 58Z" fill="currentColor"/>'+
+          '<path d="M38 31C48 24 61 23 71 29M36 41C47 33 61 32 74 38" stroke="#f2ead9" stroke-width="1.3" fill="none" opacity=".65"/>',
+     beard:'<path d="M36 67c1 11 7 19 13 21 6-2 12-10 13-21-4 5-9 7-13 7-4 0-9-2-13-7z" fill="currentColor" opacity=".4"/>'+
+           '<path d="M45 64c2-1 5-1 6 0 2-1 5-1 7 0-1 2-4 3-7 3-2 0-5-1-6-3z" fill="currentColor" opacity=".44"/>'+
+           '<path d="M46 75c3 1 8 1 11 0" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>',
+     extra:'<path d="M38 52h12a2 2 0 0 1 2 2v3a3 3 0 0 1-3 3H39a3 3 0 0 1-3-3v-3a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6" fill="none"/>'+
+           '<path d="M55 52h12a2 2 0 0 1 2 2v3a3 3 0 0 1-3 3H56a3 3 0 0 1-3-3v-3a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6" fill="none"/>'+
+           '<path d="M51 56h3M67 55l6-2" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>'},
+    /* 2 — фейк-хоук + полная борода + андеркат */
+    {hair:'<path d="M40 43C38 31 41 17 47 9 49 17 53 13 55 7 57 16 61 13 63 8 65 17 69 18 72 11 74 22 72 33 67 43 61 39 47 39 40 43Z" fill="currentColor"/>'+
+          '<path d="M38 45c-2 6-2 12 0 17M62 45c2 6 2 12 0 17" stroke="currentColor" stroke-width="2" fill="none" opacity=".28" stroke-linecap="round"/>'+
+          '<path d="M48 14v20M54 11v22M60 13v21" stroke="#f2ead9" stroke-width="1.1" opacity=".55"/>',
+     beard:'<path d="M34 55c-1 14 6 30 17 35 11-5 18-21 17-35-4 8-10 12-17 12-7 0-13-4-17-12z" fill="currentColor"/>'+
+           '<path d="M44 64c3-2 5-2 7 0 2-2 4-2 7 0-2 3-5 4-7 4-2 0-5-1-7-4z" fill="currentColor"/>'+
+           '<path d="M40 65c1 12 6 22 11 27M62 63c-1 12-6 22-11 27" stroke="#f2ead9" stroke-width="1.1" fill="none" opacity=".45"/>'},
+    /* 3 — лохматый кроп + щетина */
+    {hair:'<path d="M31 47C28 36 31 24 42 19 46 15 51 17 54 12 58 17 62 14 66 16 72 16 79 23 81 33 82 40 80 46 76 49 74 42 68 38 61 38 66 33 60 31 55 34 58 29 52 29 49 33 45 30 41 33 39 39 36 41 33 44 31 47Z" fill="currentColor"/>'+
+          '<path d="M41 26l-2 8M49 22l-1 9M57 24l1 9M65 27l2 8" stroke="#f2ead9" stroke-width="1.1" opacity=".5"/>',
+     beard:'<path d="M36 67c1 11 7 19 13 21 6-2 12-10 13-21-4 5-9 7-13 7-4 0-9-2-13-7z" fill="currentColor" opacity=".42"/>'+
+           '<path d="M45 64c2-1 5-1 6 0 2-1 5-1 7 0-1 2-4 3-7 3-2 0-5-1-6-3z" fill="currentColor" opacity=".46"/>'+
+           '<path d="M46 75c3 1 8 1 11 0" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>'},
+    /* 4 — гладкий пробор + средняя борода */
+    {hair:'<path d="M31 51C28 39 31 26 42 21 53 15 68 17 78 25 85 31 85 43 80 51 78 44 72 40 64 40 66 34 60 32 54 35 57 30 50 29 46 34 42 31 35 41 31 51Z" fill="currentColor"/>'+
+          '<path d="M47 24C45 30 44 36 45 42" stroke="#f2ead9" stroke-width="1.6" fill="none" opacity=".75"/>'+
+          '<path d="M42 28C56 23 69 25 79 31M41 37C54 32 68 33 80 39" stroke="#f2ead9" stroke-width="1.2" fill="none" opacity=".5"/>',
+     beard:'<path d="M34 61c0 13 6 25 17 29 11-4 17-16 17-29-4 7-10 11-17 11-7 0-13-4-17-11z" fill="currentColor"/>'+
+           '<path d="M44 65c3-2 5-2 7 0 2-2 4-2 7 0-2 3-5 4-7 4-2 0-5-1-7-4z" fill="currentColor"/>'+
+           '<path d="M40 66c1 11 5 19 9 23M62 65c-1 11-5 19-9 23" stroke="#f2ead9" stroke-width="1" fill="none" opacity=".4"/>'},
+    /* 5 — волнистые волосы + короткая борода */
+    {hair:'<path d="M30 53C26 45 27 34 34 28 32 21 39 17 45 20 47 13 56 13 60 19 66 15 74 18 75 25 83 25 86 34 81 41 85 47 80 53 74 52 76 46 70 43 64 45 68 38 61 36 57 41 59 34 50 34 48 41 44 36 38 39 39 45 41 49 36 53 30 53Z" fill="currentColor"/>'+
+          '<path d="M37 31c4 3 4 8 1 11M51 26c4 2 5 7 2 10M64 30c3 3 3 7 0 10" stroke="#f2ead9" stroke-width="1.2" fill="none" opacity=".55"/>',
+     beard:'<path d="M35 63c1 12 6 22 16 25 10-3 15-13 16-25-4 6-10 9-16 9-6 0-12-3-16-9z" fill="currentColor"/>'+
+           '<path d="M44 66c3-2 5-2 7 0 2-2 4-2 7 0-2 3-5 4-7 4-2 0-5-1-7-4z" fill="currentColor"/>'}
+  ];
+  function portraitSVG(p){
+    return '<svg viewBox="0 0 96 120" fill="none" xmlns="http://www.w3.org/2000/svg">'+
+      '<path d="M41 79h14v13c0 6-14 6-14 0z" fill="#e6d6ba"/>'+
+      '<path d="M8 120c0-15 15-25 29-27l4 8 9 6 9-6 4-8c14 2 29 12 29 27z" fill="currentColor"/>'+
+      '<path d="M41 93l9 9 9-9-9-4z" fill="#efe3cd"/>'+
+      '<path d="M34 47C34 31 43 23 55 24 67 25 73 35 73 48 73 59 70 69 64 78 59 85 53 89 47 88 41 87 37 80 35 69 33 61 34 54 34 47Z" fill="#efe3cd" stroke="#1c1813" stroke-width=".8"/>'+
+      p.beard + p.hair +
+      '<path d="M39 49c3-2 7-2 10 0M54 49c3-2 7-2 10 0" stroke="currentColor" stroke-width="2.3" fill="none" stroke-linecap="round"/>'+
+      '<path d="M40 55c2-2 7-2 9 0-2 3-7 3-9 0z" fill="#efe3cd" stroke="currentColor" stroke-width="1.1"/><circle cx="44.5" cy="55" r="1.5" fill="currentColor"/>'+
+      '<path d="M55 55c2-2 7-2 9 0-2 3-7 3-9 0z" fill="#efe3cd" stroke="currentColor" stroke-width="1.1"/><circle cx="59.5" cy="55" r="1.5" fill="currentColor"/>'+
+      '<path d="M52 53c-1 6-3 9-1 12 1 2 4 2 6 1" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+
+      (p.extra||'')+
+      '</svg>';
+  }
+  function cardHTML(rank,suit,p){
+    var cls = suit.red ? " red" : "";
+    var corner = rank+'<i>'+suit.s+'</i>';
+    return '<div class="fcard">'+
+      '<div class="fc-face fc-front">'+
+        '<span class="fc-rank tl'+cls+'">'+corner+'</span>'+
+        '<span class="fc-rank br'+cls+'">'+corner+'</span>'+
+        '<div class="fc-art">'+portraitSVG(p)+'</div>'+
+      '</div><div class="fc-face fc-back"></div></div>';
+  }
+
+  var BASE = reduce ? 5 : (window.innerWidth<640 ? 7 : (window.innerWidth<1000 ? 11 : 15));
+  var COUNT = Math.max(3, Math.round(BASE*(opts.density||1)));
+  var cards=[], W=1,H=1,CW=90,CH=126,R=42;
+  for(var i=0;i<COUNT;i++){
+    var node=el(cardHTML(ranks[i%3], suits[i%4], PORTRAITS[i%PORTRAITS.length]));
+    stage.appendChild(node); cards.push({el:node});
+  }
+  function measure(){ W=stage.clientWidth; H=stage.clientHeight; if(cards[0].el.offsetWidth){CW=cards[0].el.offsetWidth; CH=cards[0].el.offsetHeight;} R=CW*0.46; }
+  measure();
+
+  function reset(c, initial){
+    c.x=Math.random()*Math.max(1,W-CW);
+    c.y=initial ? Math.random()*Math.max(1,H-CH) : -CH-Math.random()*H*0.7;
+    c.vx=(Math.random()-0.5)*0.6; c.vy=0.3+Math.random()*0.5;
+    c.rot=Math.random()*360; c.vrot=(Math.random()-0.5)*1.4;
+    c.flip=Math.random()*360; c.vflip=(Math.random()-0.5)*2.4;
+    c.swA=0.25+Math.random()*0.6; c.swF=0.5+Math.random()*0.7; c.swP=Math.random()*Math.PI*2;
+  }
+  cards.forEach(function(c){ reset(c,true); });
+  function draw(c){ c.el.style.transform="translate3d("+c.x.toFixed(2)+"px,"+c.y.toFixed(2)+"px,0) rotate("+c.rot.toFixed(2)+"deg) rotateY("+c.flip.toFixed(2)+"deg)"; }
+  cards.forEach(draw); // первый кадр сразу, без пустой вспышки до старта rAF
+
+  if(reduce){
+    var sp=cards.length;
+    cards.forEach(function(c,k){ c.x=W*0.5-CW/2+(k-(sp-1)/2)*CW*0.52; c.y=H*0.42-CH/2+Math.abs(k-(sp-1)/2)*8; c.rot=(k-(sp-1)/2)*9; c.flip=0; draw(c); });
+    return;
+  }
+
+  var last=0, running=false, raf=0;
+  var G=0.012, TERM=2.6;
+  function step(now){
+    var dt=Math.min(2.4,(now-last)/16.67); last=now;
+    var n=cards.length, i,c;
+    for(i=0;i<n;i++){ c=cards[i];
+      c.vy+=G*dt; if(c.vy>TERM)c.vy=TERM;
+      c.vx+=Math.sin(now*0.001*c.swF+c.swP)*0.018*c.swA*dt; c.vx*=0.992;
+      c.x+=c.vx*dt*1.7; c.y+=c.vy*dt*1.7;
+      c.rot+=c.vrot*dt; c.flip+=c.vflip*dt; c.vrot*=0.995;
+      if(c.x<-CW*0.3){c.x=-CW*0.3; c.vx=Math.abs(c.vx)*0.5;}
+      if(c.x>W-CW*0.7){c.x=W-CW*0.7; c.vx=-Math.abs(c.vx)*0.5;}
+    }
+    for(var a=0;a<n;a++){ var ca=cards[a], ax=ca.x+CW/2, ay=ca.y+CH/2;
+      for(var b=a+1;b<n;b++){ var cb=cards[b], dx=(cb.x+CW/2)-ax, dy=(cb.y+CH/2)-ay;
+        var d2=dx*dx+dy*dy, mn=2*R;
+        if(d2<mn*mn){ var d=Math.sqrt(d2)||0.01, nx=dx/d, ny=dy/d, ov=mn-d;
+          ca.x-=nx*ov*0.5; ca.y-=ny*ov*0.5; cb.x+=nx*ov*0.5; cb.y+=ny*ov*0.5;
+          var vn=(cb.vx-ca.vx)*nx+(cb.vy-ca.vy)*ny;
+          if(vn<0){ var imp=-1.4*vn/2;
+            ca.vx-=imp*nx; ca.vy-=imp*ny; cb.vx+=imp*nx; cb.vy+=imp*ny;
+            ca.vrot+=(Math.random()-0.5)*1.2; cb.vrot+=(Math.random()-0.5)*1.2; }
+        }
+      }
+    }
+    for(i=0;i<n;i++){ c=cards[i]; if(c.y>H+CH*0.6) reset(c,false); draw(c); }
+    raf=requestAnimationFrame(step);
+  }
+  function start(){ if(running)return; running=true; last=performance.now(); raf=requestAnimationFrame(step); }
+  function stop(){ running=false; if(raf)cancelAnimationFrame(raf); raf=0; }
+
+  new IntersectionObserver(function(es){ es.forEach(function(e){ (e.isIntersecting && !document.hidden) ? start() : stop(); }); }, {threshold:0}).observe(stage);
+  document.addEventListener("visibilitychange", function(){ if(document.hidden){ stop(); } else { var r=stage.getBoundingClientRect(); if(r.bottom>0 && r.top<innerHeight) start(); } });
+  var rt; window.addEventListener("resize", function(){ clearTimeout(rt); rt=setTimeout(function(){ measure(); cards.forEach(function(c){ if(c.x>W-CW)c.x=Math.max(0,W-CW); }); }, 200); }, {passive:true});
+}
+fallingCards(document.getElementById("heroCards"));
+fallingCards(document.getElementById("bookingCards"), {density:0.55});
+
+/* ---------- REVEAL (IntersectionObserver) ---------- */
+var reduce = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(reduce){
+  Array.prototype.forEach.call(document.querySelectorAll(".reveal"),function(n){n.classList.add("in");});
+}else{
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, {threshold:.12, rootMargin:"0px 0px -40px 0px"});
+  Array.prototype.forEach.call(document.querySelectorAll(".reveal"),function(n){io.observe(n);});
+}
+
+/* ---------- ТИПОГРАФИКА (правила на всех разрешениях) ----------
+   1. Строка не заканчивается «висячим» коротким словом (1–2 буквы/цифры):
+      такое слово приклеивается к следующему неразрывным пробелом.
+   2. Строка не начинается с тире/дефиса: пробел перед ним делаем неразрывным,
+      тире уходит в строку выше.
+   Работает и для статичной разметки, и для контента, собранного из данных. */
+var NBSP=" ";
+function wordLen(s){ var m=s.match(/[A-Za-zА-Яа-яЁё0-9]/g); return m?m.length:0; }
+function typoText(s){
+  if(s.indexOf(" ")===-1) return s;
+  var parts=s.split(" "), out=parts[0], i, prev, cur, sep;
+  for(i=1;i<parts.length;i++){
+    prev=parts[i-1]; cur=parts[i]; sep=" ";
+    if(prev!==""){
+      var wl=wordLen(prev);
+      if(wl>=1 && wl<=2) sep=NBSP;                          // правило 1: короткое слово
+      else if(cur!=="" && /^[—–-]/.test(cur)) sep=NBSP;     // правило 2: тире/дефис не открывает строку
+      else if(cur!=="" && /^₽/.test(cur)) sep=NBSP;         // валюту держим рядом с суммой
+    }
+    out+=sep+cur;
+  }
+  return out;
+}
+(function typographer(root){
+  var SKIP={SCRIPT:1,STYLE:1,NOSCRIPT:1,TEXTAREA:1,INPUT:1,SELECT:1,OPTION:1,CODE:1};
+  (function walk(node){
+    for(var n=node.firstChild;n;n=n.nextSibling){
+      if(n.nodeType===3){
+        if(/\S/.test(n.nodeValue)){ var nt=typoText(n.nodeValue); if(nt!==n.nodeValue) n.nodeValue=nt; }
+      } else if(n.nodeType===1 && !SKIP[n.tagName] && !(window.SVGElement && n instanceof SVGElement)){
+        walk(n);
+      }
+    }
+  })(root);
+})(document.body);
+})();
+</script>
+</body>
+</html>
