@@ -48,3 +48,4 @@ python -m http.server 4321
 
 Сайт опубликован на GitHub Pages из ветки `main` (корень репозитория). Любой пуш в `main`
 автоматически обновляет страницу.
+Демо: https://nikita41478.github.io/fullhouse/
